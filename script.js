@@ -20,3 +20,26 @@ document.getElementById("consentForm").addEventListener("submit", function(event
         alert("Please check the box to give your consent before continuing.");
     }
 });
+
+function setPdfZoom() {
+    const pdf = document.getElementById("pdfViewer");
+    let zoom;
+
+    if (window.innerWidth >= 1200) {
+        zoom = 150; // large screens
+    } else if (window.innerWidth >= 800) {
+        zoom = 130; // medium screens
+    } else {
+        zoom = 100; // small screens (phones/tablets)
+    }
+
+    // Add PDF open parameter to iframe src
+    pdf.src = `consent.pdf#zoom=${zoom}&view=FitH`;
+}
+
+// Set zoom on page load
+window.addEventListener("load", setPdfZoom);
+
+// Optional: adjust if user resizes window
+window.addEventListener("resize", setPdfZoom);
+
