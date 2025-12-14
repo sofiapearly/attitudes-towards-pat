@@ -67,15 +67,15 @@ button:hover {
     }
 
     h1 {
-        font-size: 0.8rem; /* smaller title */
+        font-size: 0.9rem; /* smaller title */
     }
 
     h2 {
-        font-size: 0.8rem; /* smaller subtitle */
+        font-size: 0.9rem; /* smaller subtitle */
     }
 
     p, li {
-        font-size: 0.7rem; /* smaller body text */
+        font-size: 0.8rem; /* smaller body text */
     }
 
     button {
