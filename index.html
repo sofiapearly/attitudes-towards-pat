@@ -80,13 +80,27 @@
     </section>
 
     <!-- Consent checkbox and continue button -->
-    <form id="consentForm">
-        <label>
-            <input type="checkbox" id="consentCheckbox">
-            I consent to participate in this study
-        </label><br><br>
-        <button type="submit">Continue</button>
+    <form id="consentForm" class="consent-form">
+        <fieldset>
+            <legend><strong>Consent to participate</strong></legend>
+
+            <label class="consent-label">
+                <input type="checkbox" id="consentCheckbox">
+                <span>I confirm that:</span>
+            </label>
+
+            <ul class="consent-list">
+                <li>I have read and understood the Participant Information Sheet</li>
+                <li>I am aged 18 years or over</li>
+                <li>I understand that my participation is voluntary and that I can withdraw up to two weeks after submitting my responses</li>
+                <li>I understand that my responses will be anonymised and used for research purposes</li>
+                <li>I consent to participate in this study</li>
+            </ul>
+
+            <button type="submit">Continue</button>
+        </fieldset>
     </form>
+
 
 </div>
 
